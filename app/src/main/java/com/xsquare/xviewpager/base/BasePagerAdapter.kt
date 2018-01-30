@@ -6,6 +6,7 @@ import android.view.ViewGroup
 
 /**
  * BaseAdapter(PagerAdapter)
+ * 适用ViewPager的Adapter（非Fragment的）
  * Created by xsquare on 2018/1/29.
  */
 abstract class BasePagerAdapter(var list: ArrayList<*>) :PagerAdapter(){
