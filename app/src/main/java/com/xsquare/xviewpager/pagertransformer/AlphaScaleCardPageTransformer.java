@@ -8,7 +8,7 @@ import com.xsquare.xviewpager.base.BasePageTransformer;
 /**
  * 卡片式、预览左右缩放半透明图片
  */
-public class AlphaAndScalePageTransformer extends BasePageTransformer {
+public class AlphaScaleCardPageTransformer extends BasePageTransformer {
 
     /**
      * @param page 滑动的页面
