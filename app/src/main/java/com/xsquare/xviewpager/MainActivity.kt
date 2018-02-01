@@ -4,8 +4,9 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import com.xsquare.xviewpager.card.AlphaCardActivity
-import com.xsquare.xviewpager.card.RotateCardActivity
+import com.xsquare.xviewpager.activity.AlphaCardActivity
+import com.xsquare.xviewpager.activity.RotateCardActivity
+import com.xsquare.xviewpager.activity.ZoomAlphaActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         val lists:ArrayList<String> = arrayListOf()
         lists.add("alpha card")
         lists.add("Rotate Card")
+        lists.add("Zoom alpha")
         val adapter = MainAdapter(lists,this)
         recyclerView.adapter = adapter
 
@@ -32,6 +34,9 @@ class MainActivity : AppCompatActivity() {
                     1 ->{
                         intent = Intent(this@MainActivity,RotateCardActivity::class.java)
                         startActivity(intent)
+                    }
+                    2 ->{
+                        startActivity(Intent(this@MainActivity,ZoomAlphaActivity::class.java))
                     }
                 }
             }

@@ -10,7 +10,7 @@ import android.view.View;
 public abstract class BasePageTransformer implements ViewPager.PageTransformer{
     /**
      * @param page 滑动的页面
-     * @param position 想左滑动为正（可查源码），范围（0,+∞）,向左滑动一个页面增加1，反之
+     * @param position 想左滑动为正（可查源码），范围（0,销毁）,向左滑动一个页面增加1，反之
      */
     @Override
     public void transformPage(View page, float position) {

@@ -1,10 +1,11 @@
-package com.xsquare.xviewpager.card
+package com.xsquare.xviewpager.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.xsquare.xviewpager.CardBean
 import com.xsquare.xviewpager.R
 import com.xsquare.xviewpager.cardadapter.AlphaCardAdapter
+import com.xsquare.xviewpager.cardadapter.ZoomAlphaAdapter
 import com.xsquare.xviewpager.pagertransformer.AlphaScaleCardPageTransformer
 import kotlinx.android.synthetic.main.activity_alpha_card.*
 
@@ -24,11 +25,11 @@ class AlphaCardActivity : AppCompatActivity() {
         lists.add(CardBean(R.mipmap.place3, "place3"))
         lists.add(CardBean(R.mipmap.place4, "place4"))
         lists.add(CardBean(R.mipmap.place5, "place5"))
-        val adapter = AlphaCardAdapter(lists)
+        val adapter = ZoomAlphaAdapter(lists)
         viewPager.adapter = adapter
         viewPager.pageMargin = 40
         viewPager.offscreenPageLimit = 3
-        supportActionBar!!.title = "Alpha card"
+        supportActionBar!!.title = "Zoom alpha"
         viewPager.setPageTransformer(true, AlphaScaleCardPageTransformer())
     }
 }

@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".card.AlphaCardActivity" />
-        <activity android:name=".card.RotateCardActivity"></activity>
+        <activity android:name=".activity.AlphaCardActivity" />
+        <activity android:name=".activity.RotateCardActivity" />
+        <activity android:name=".activity.ZoomAlphaActivity"></activity>
     </application>
 
 </manifest>
